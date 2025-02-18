@@ -1,22 +1,20 @@
 public class Whale extends Mammals{
     private String ViewWhale;
-    private String nameAnimal;
     private boolean isWool;
     private boolean isSpine;
     private boolean isWater;
 
-    public Whale(String nameAnimal, String ViewWhale) {
-        super(nameAnimal);
+    public Whale(String ViewWhale) {
+        super(ViewWhale);
         this.ViewWhale = ViewWhale;
-        this.nameAnimal = nameAnimal;
-        isWool = true;
+        isWool = false;
         isSpine = true;
-        isWater = false;
+        isWater = true;
     }
 
     @Override
     public void isWool() {
-        System.out.println(ViewWhale + " имеет шерсть");
+        System.out.println(ViewWhale + " не имеет шерсть");
     }
 
     @Override
@@ -26,11 +24,11 @@ public class Whale extends Mammals{
 
     @Override
     public void isWater() {
-        System.out.println(ViewWhale + " не живёт в воде");
+        System.out.println(ViewWhale + " живёт в воде");
     }
 
     @Override
     public void display() {
-        System.out.println("Вид дельфина: " + ViewWhale + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: " + isSpine + "\nЖивёт в воде: " + isWater);
+        System.out.println("Вид: " + ViewWhale + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: " + isSpine + "\nЖивёт в воде: " + isWater);
     }
 }

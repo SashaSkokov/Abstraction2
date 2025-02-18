@@ -1,14 +1,12 @@
 public class Bear extends Mammals{
     private String ViewBear;
-    private String nameAnimal;
     private boolean isWool;
     private boolean isSpine;
     private boolean isWater;
 
-    public Bear(String nameAnimal, String ViewBear) {
-        super(nameAnimal);
+    public Bear(String ViewBear) {
+        super(ViewBear);
         this.ViewBear = ViewBear;
-        this.nameAnimal = nameAnimal;
         isWool = true;
         isSpine = true;
         isWater = false;
@@ -31,6 +29,6 @@ public class Bear extends Mammals{
 
     @Override
     public void display() {
-        System.out.println("Вид медведя: " + ViewBear + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: " + isSpine + "\nЖивёт в воде: " + isWater);
+        System.out.println("Вид: " + ViewBear + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: " + isSpine + "\nЖивёт в воде: " + isWater);
     }
 }

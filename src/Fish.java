@@ -29,7 +29,7 @@ public class Fish implements Features{
 
     @Override
     public void display() {
-        System.out.println("Вид рыбы: " + nameFish + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: " + isSpine + "\nЖивёт в воде: " + isWater);
+        System.out.println("Вид: " + nameFish + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: 3" + isSpine + "\nЖивёт в воде: " + isWater);
     }
 
 

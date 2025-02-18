@@ -1,3 +1,7 @@
 abstract class Animals implements Features {
-    public Animals(){}
+    private String nameAnimal;
+
+    public Animals(String nameAnimal){
+        this.nameAnimal=nameAnimal;
+    }
 }
