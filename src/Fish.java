@@ -1,7 +1,7 @@
-public class Fish extends FieldNames implements Features{
+public class Fish extends Animals implements Features{
 
     public Fish(String nameFish){
-        ViewAnimal = nameFish;
+        super(nameFish);
         isWool = false;
         isSpine = false;
         isWater = true;
@@ -9,22 +9,22 @@ public class Fish extends FieldNames implements Features{
 
     @Override
     public void isWool() {
-        System.out.println(ViewAnimal + " не имеет шерсти");
+        System.out.println(super.getViewAnimal() + " не имеет шерсти");
     }
 
     @Override
     public void isSpine() {
-        System.out.println(ViewAnimal + " не имеет позвоночника");
+        System.out.println(super.getViewAnimal() + " не имеет позвоночника");
     }
 
     @Override
     public void isWater() {
-        System.out.println(ViewAnimal + " живёт в воде");
+        System.out.println(super.getViewAnimal() + " живёт в воде");
     }
 
     @Override
     public void display() {
-        System.out.println("Вид: " + ViewAnimal + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: 3" + isSpine + "\nЖивёт в воде: " + isWater);
+        System.out.println("Вид: " + super.getViewAnimal() + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: " + isSpine + "\nЖивёт в воде: " + isWater);
     }
 
 

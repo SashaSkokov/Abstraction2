@@ -4,4 +4,8 @@ abstract class Animals extends FieldNames implements Features {
     public Animals(String nameAnimal){
         this.nameAnimal=nameAnimal;
     }
+
+    public String getViewAnimal(){
+        return nameAnimal;
+    }
 }
