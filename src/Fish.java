@@ -1,12 +1,7 @@
-public class Fish implements Features{
-
-    private String nameFish;
-    private boolean isWool;
-    private boolean isSpine;
-    private boolean isWater;
+public class Fish extends FieldNames implements Features{
 
     public Fish(String nameFish){
-        this.nameFish = nameFish;
+        ViewAnimal = nameFish;
         isWool = false;
         isSpine = false;
         isWater = true;
@@ -14,22 +9,22 @@ public class Fish implements Features{
 
     @Override
     public void isWool() {
-        System.out.println(nameFish + " не имеет шерсти");
+        System.out.println(ViewAnimal + " не имеет шерсти");
     }
 
     @Override
     public void isSpine() {
-        System.out.println(nameFish + " не имеет позвоночника");
+        System.out.println(ViewAnimal + " не имеет позвоночника");
     }
 
     @Override
     public void isWater() {
-        System.out.println(nameFish + " живёт в воде");
+        System.out.println(ViewAnimal + " живёт в воде");
     }
 
     @Override
     public void display() {
-        System.out.println("Вид: " + nameFish + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: 3" + isSpine + "\nЖивёт в воде: " + isWater);
+        System.out.println("Вид: " + ViewAnimal + "\nИмеет шерсть: " + isWool + "\nИмеет позвоночник: 3" + isSpine + "\nЖивёт в воде: " + isWater);
     }
 
 
