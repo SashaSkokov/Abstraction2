@@ -1,10 +1,11 @@
 public class Whale extends Mammals{
 
-    public Whale(String ViewWhale) {
-        super(ViewWhale);
+    public Whale(String ViewWhale, int id, String property) {
+        super(ViewWhale, id, property);
         isWool = false;
         isSpine = true;
         isWater = true;
+
     }
 
     @Override

@@ -1,7 +1,7 @@
 public class Cat extends Mammals{
 
-    public Cat(String ViewCat) {
-        super(ViewCat);
+    public Cat(String ViewCat, int id, String property) {
+        super(ViewCat, id, property);
         isWool = true;
         isSpine = true;
         isWater = false;

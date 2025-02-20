@@ -1,7 +1,7 @@
 public class Bear extends Mammals{
 
-    public Bear(String ViewBear) {
-        super(ViewBear);
+    public Bear(String ViewBear, int id, String property) {
+        super(ViewBear, id, property);
         isWool = true;
         isSpine = true;
         isWater = false;
